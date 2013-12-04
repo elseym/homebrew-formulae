@@ -11,7 +11,7 @@ class Whereami < Formula
     system "xcodebuild", "-project", "WhereAmI.xcodeproj",
                          "-target", "WhereAmI",
                          "-configuration", "Release",
-                         "clean", "build",
+                         "clean", "build"
     system "mv", "build/Release/WhereAmI",
                  "build/Release/whereami"
     bin.install "build/Release/whereami"
