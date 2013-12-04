@@ -3,7 +3,7 @@ require 'formula'
 class Whereami < Formula
   homepage 'https://github.com/robmathers/WhereAmI'
   url 'https://github.com/robmathers/WhereAmI/archive/v1.02.tar.gz'
-  sha1 '77d268416ae0749b8f5251397b78f1bebe65f890'
+  sha1 '14dd46e8b3c2cef0725c2f95e77fbdc379a0ba42'
 
   def install
     system "xcodebuild", "-project", "WhereAmI.xcodeproj",
