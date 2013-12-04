@@ -12,21 +12,12 @@ class Whereami < Formula
                          "-target", "WhereAmI",
                          "-configuration", "Release",
                          "clean", "build",
-    system "mv",
-           "build/Release/WhereAmI",
-           "build/Release/whereami"
+    system "mv", "build/Release/WhereAmI",
+                 "build/Release/whereami"
     bin.install "build/Release/whereami"
   end
 
   test do
-    # `test do` will create, run in and delete a temporary directory.
-    #
-    # This test will fail and we won't accept that! It's enough to just replace
-    # "false" with the main program this formula installs, but it'd be nice if you
-    # were more thorough. Run the test with `brew test WhereAmI`.
-    #
-    # The installed folder is not in the path, so use the entire path to any
-    # executables being tested: `system "#{bin}/program", "--version"`.
     system "true"
   end
 end
